@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<head>
+<meta charset="UTF-8"/>
+<title>自动生成无课表</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-4.0.0.min.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-switch.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/fileinput.min.css')}}" media="all">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+<script src="{{ url_for('static', filename='js/jquery-3.2.1.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap-4.0.0.min.js')}}"></script>
+<!-- the main fileinput plugin file -->
+<script src="{{ url_for('static', filename='js/fileinput.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/zh.min.js')}}"></script>
+<script src="{{ url_for('static', filename='js/bootstrap-switch.js')}}"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style type="text/css">
+
+</style>
+</head>
+<body background="">
+<br>
+<main>
+    {% for message in get_flashed_messages() %}
+<div class="alert alert-danger" role="alert">
+    {{ message }}
+</div>
+    {% endfor %}
+    {% block content %}{% endblock %}
+</main>
+<div class="container" style="padding-left: 30px;padding-right: 30px;width: 380px;">
+<div class="acard" style="padding-top: 3px;padding-bottom: 3px;background-color: #5b7edc;">
+    <h1 class="text-center" style="color: white;">
+    自动生成无课表
+    </h1>
+</div>
+<br>
+<button onclick="javascrtpt:window.location.href='{{ url_for('instructions')}}'" type="button" class="btn btn-outline-info btn-lg btn-block acard" style="background-color: white;">查看使用说明</button>
+<br>
+<form action="/process_form" method="POST" enctype="multipart/form-data">
+    <div class="acard" style="background-color: white">
+        <input id="uploadfile" type="file" name="file" data-preview-file-type="text">
+    </div>
+    <br>
+    <div class="card acard">
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+            <input type="checkbox" id="four_class_a_day" name="options" value="four_class_a_day">
+            <span>
+                        按每天四节大课显示
+            </span>
+            </li>
+            <li class="list-group-item">
+            <input type="checkbox" id="no_night" name="options" value="no_night">
+            <span>
+                        不显示晚上的三节课
+            </span>
+            </li>
+            <li class="list-group-item">
+            <input type="checkbox" id="no_weekend" name="options" value="no_weekend">
+            <span>
+                        不显示周末的课
+            </span>
+            </li>
+            <li class="list-group-item">
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">显示第</span>
+                </div>
+                <input type="text" class="form-control" value="1" name="from_week">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">周，到</span>
+                </div>
+                <input type="text" class="form-control" value="18" name="to_week">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">周</span>
+                </div>
+            </div>
+            </li>
+        </ul>
+    </div>
+    <br>
+    <button type="submit" name="submit" class="btn btn-primary btn-lg btn-block acard" onclick="function(){$('html,body').animate({scrollTop: '0px'}, 800);}">生成无课表</button>
+</form>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+<script type="text/javascript">
+$("#uploadfile").fileinput({
+        language: 'zh',
+        showUpload: false,
+        fileType: "any",
+    });
+$("[name='options']").bootstrapSwitch({
+    onText : "✓",
+    offText : "X",
+    onColor : "success",
+    offColor : "danger"
+});
+//$("[name='options']").bootstrapSwitch('state', true);
+$("#four_class_a_day").on('switchChange.bootstrapSwitch', function(event, state) {
+  if(this.checked){
+    $("#no_night").bootstrapSwitch('state', true);
+  }
+});
+$("#four_class_a_day").bootstrapSwitch('state', true);
+$("#no_night").bootstrapSwitch('state', true);
+</script>
+</html>

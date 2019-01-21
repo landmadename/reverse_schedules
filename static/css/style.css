@@ -1,0 +1,13 @@
+body{
+    background-color: #b9ffee;
+}
+
+.bootstrap-switch-label{
+    background-image: linear-gradient(to bottom, #ffffff, #e6e6e6);
+}
+
+.acard{
+    border-radius: 10px;
+    box-shadow:6px 6px 10px #666;
+}
+

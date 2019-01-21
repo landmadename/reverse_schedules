@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>使用说明</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-4.0.0.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <script src="{{ url_for('static', filename='js/bootstrap-4.0.0.min.js')}}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container" style="padding-left: 30px;padding-right: 30px;width: 380px;">
+    <br>
+    <div class="acard" style="padding-top: 3px;padding-bottom: 3px;background-color: #5b7edc;">
+        <h1 class="text-center" style="color: white;">
+        使用说明书
+        </h1>
+    </div>
+    <br>
+    <div class="card acard">
+      <div class="card-header" style="background-color: #dee2e6;">
+        <strong> 长话短说</strong>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">上传学生信息表格</li>
+        <li class="list-group-item">选择一下参数</li>
+        <li class="list-group-item">按下生成，热腾腾的无课表就出来啦！</li>
+        <li class="list-group-item">但是，你还得再做一些操作</li>
+      </ul>
+    </div>
+    <br>
+<div class="card acard">
+  <img class="card-img-top" src="{{url_for('static', filename='img/input_example.jpg')}}">
+  <div class="card-header" style="background-color: #dee2e6;"><strong>啥是学生信息表格?</strong></div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">如图所示</li>
+    <li class="list-group-item">必须，且只能，且按顺序有：</li>
+    <li class="list-group-item">表头 -> 班级、学号、姓名</li>
+    <li class="list-group-item">数据 -> 就是数据</li>
+  </ul>
+</div>
+<br>
+
+<div class="card acard">
+  <img class="card-img-top" src="{{url_for('static', filename='img/options_example.jpg')}}">
+  <div class="card-header" style="background-color: #dee2e6;"><strong>关于选参数?</strong></div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">如图所示，按按开关就行</li>
+    <li class="list-group-item">1：有很少数的课只有45分钟，推荐忽略</li>
+    <li class="list-group-item">2：开启1就默认开启2</li>
+    <li class="list-group-item">3：顾名思义</li>
+  </ul>
+</div>
+<br>
+
+<div class="card acard">
+  <div class="card-header" style="background-color: #dee2e6;"><strong>一定要再操作一下！！！！</strong></div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><strong>双击这一个格子</strong>
+    <img class="card-img-top" src="{{url_for('static', filename='img/operates1.jpg')}}"></li>
+    <li class="list-group-item"><strong>你会发现它变大了！然后选择这个大格子</strong>
+    <img class="card-img-top" src="{{url_for('static', filename='img/operates2.jpg')}}"></li>
+    <li class="list-group-item"><strong>双击上面那个刷子，按住CTRL，连按两下A！</strong>
+    <img class="card-img-top" src="{{url_for('static', filename='img/operates3.jpg')}}"></li>
+    <li class="list-group-item"><strong>打完收工</strong></li>
+  </ul>
+</div>
+<br>
+<button onclick="javascrtpt:window.location.href='{{ url_for('index')}}'" class="btn btn-primary btn-lg btn-block acard">返回首页</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
