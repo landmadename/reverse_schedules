@@ -5,6 +5,8 @@ from flask import url_for, request, send_from_directory
 
 
 app = Flask(__name__)
+if os.getcwd() == '/home/landmadename':
+    os.chdir('/home/landmadename/reverse_schedules')
 app.secret_key = 'lalalalololo'
 app.config.from_pyfile('settings.py')
 

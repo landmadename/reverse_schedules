@@ -2,6 +2,7 @@
 <head>
 <meta charset="UTF-8"/>
 <title>自动生成无课表</title>
+<link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico')}}" type="image/x-icon">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-4.0.0.min.css')}}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-switch.css')}}">
 <link rel="stylesheet" href="{{ url_for('static', filename='css/fileinput.min.css')}}" media="all">
@@ -35,7 +36,11 @@
     </h1>
 </div>
 <br>
-<button onclick="javascrtpt:window.location.href='{{ url_for('instructions')}}'" type="button" class="btn btn-outline-info btn-lg btn-block acard" style="background-color: white;">查看使用说明</button>
+<div class="btn-group acard" role="group" aria-label="Basic example" style="width: 320px">
+<button id="b_left" onclick="javascrtpt:window.location.href='{{ url_for('instructions')}}'" type="button" class="btn btn-outline-info btn-lg" style="background-color: white;width: 161px;">查看使用说明</button>
+<button id="b_right" onclick="javascrtpt:window.location.href='{{ url_for('static', filename='test/input.xls')}}'" type="button" class="btn btn-outline-info btn-lg" style="background-color: white;width: 160px;">下载示例文件</button>
+</div>
+<br>
 <br>
 <form action="/process_form" method="POST" enctype="multipart/form-data">
     <div class="acard" style="background-color: white">
