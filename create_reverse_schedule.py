@@ -28,8 +28,21 @@ class course_data():
         self.class_names = [i[10] for i in self.data]
         self.course_time = \
             [self.format_course_time((i[1], i[4])) for i in self.data]
+        self.art_time = self.create_art_time()
         self.english_data = self.format_english_data(english_filenames)
         self.sids = self.english_data.keys()
+        self.art_classes = set([i[-1] for i in self.data if i[-3] == '艺术设计学院'])
+
+    def create_art_time(self):
+        data = []
+        for i in range(10):
+            if i % 2 == 0:
+                data.append((list(range(1, self.term_week_number + 1)),
+                             int(i / 2 + 1), [1, 2]))
+            else:
+                data.append((list(range(1, self.term_week_number + 1)),
+                             int((i + 1) / 2), [3, 4]))
+        return data
 
     def format_course_time(self, data):
         data, weekday = data
@@ -139,6 +152,8 @@ class course_data():
         english_time = self.english_data[sid]
         table = self.change_schedule(table, courses_time)
         table = self.change_schedule(table, english_time)
+        if class_name in self.art_classes:
+            table = self.change_schedule(table, self.art_time)
         return table
 
     def combine(self, tables):
