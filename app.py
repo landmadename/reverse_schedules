@@ -24,6 +24,11 @@ def instructions():
     return render_template('instructions.html')
 
 
+@app.route('/class_list')
+def class_list():
+    return render_template('class_names.html')
+
+
 @app.route('/process_form', methods=['POST'])
 def process_file():
     def random_filename(filename):
