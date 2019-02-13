@@ -1,4 +1,5 @@
 import re
+from fuzzywuzzy import fuzz
 
 
 class excel():
@@ -26,12 +27,29 @@ class course_data():
         self.term_week_number = term_week_number
         self.data = self.load_data(course_data_filename)
         self.class_names = [i[10] for i in self.data]
+        self.set_of_class_names = list(set(self.class_names))
+        self.set_of_class_names_for_search = \
+            self.process_class_names_for_search()
         self.course_time = \
             [self.format_course_time((i[1], i[4])) for i in self.data]
         self.art_time = self.create_art_time()
         self.english_data = self.format_english_data(english_filenames)
         self.sids = self.english_data.keys()
         self.art_classes = set([i[-1] for i in self.data if i[-3] == '艺术设计学院'])
+
+    def search(self, kw):
+        kw = ' '.join([ii for ii in kw])
+        data = [(fuzz.token_set_ratio(i, kw), self.set_of_class_names[e])
+                for e, i in enumerate(self.set_of_class_names_for_search)]
+        data.sort(reverse=True)
+        data = [i for i in data if i[0] >= 85]
+        return [i[1] for i in data]
+
+    def process_class_names_for_search(self):
+        data = []
+        for i in self.set_of_class_names:
+            data.append(' '.join([ii for ii in i]))
+        return data
 
     def create_art_time(self):
         data = []
@@ -91,7 +109,12 @@ class course_data():
         return english_dict
 
     def possible_class_names(self, class_name):
-        infomation = '即将升级此功能'
+        possibles = str(self.search(class_name))
+        infomation = '您输入的班级"{}"电脑看不懂，您可能找的是 {}。若不是，请在 {} 中寻找规范的班级名称'\
+            .format(class_name,
+                    possibles,
+                    'landmadename.pythonanywhere.com/class_list')
+
         return infomation
 
     def load_data(self, filename):
@@ -171,12 +194,10 @@ class course_data():
         wrong_data = []
         flag = 0
         for class_name, sid, name in data:
-            user = [class_name, sid, name]
+            user = [class_name, sid, name, '---->']
             infomation = []
-            if class_name not in self.class_names:
-                infomation.append('班级不存在，你要找的可能是' +
-                                  self.possible_class_names(class_name) +
-                                  '请修改。')
+            if class_name not in self.set_of_class_names:
+                infomation.append(self.possible_class_names(class_name))
                 flag = 1
             if sid not in self.sids:
                 infomation.append('学号错误或没有英语课')
@@ -187,14 +208,16 @@ class course_data():
             if infomation != []:
                 user.append(''.join(infomation))
                 wrong_data.append(user)
-        print(wrong_data)
-        assert flag == 0
+        return (flag, wrong_data)
 
     def department_no_lesson_schedule(self, department):
-        self.check_user_data(department)
-        schedules = [self.one_no_lesson_schedule(i) for i in department]
-        schedule = self.combine(schedules)
-        return schedule
+        flag, infomation = self.check_user_data(department)
+        if flag == 1:
+            return (False, infomation)
+        else:
+            schedules = [self.one_no_lesson_schedule(i) for i in department]
+            schedule = self.combine(schedules)
+            return schedule
 
     def screen_data(self,
                     data,

@@ -9,6 +9,9 @@ if os.getcwd() == '/home/landmadename':
     os.chdir('/home/landmadename/reverse_schedules')
 app.secret_key = 'lalalalololo'
 app.config.from_pyfile('settings.py')
+cd = create_reverse_schedule.course_data(app.config['TERM_WEEK_NUMBER'],
+                                         app.config['DATA_FILENAME'],
+                                         app.config['ENGLISH_FILENAMES'])
 
 
 @app.route('/')
@@ -62,12 +65,13 @@ def process_file():
     new_filename = random_filename(row_filename)
     file.save(os.path.join(app.config['UPLOAD_PATH'], new_filename))
 
-    cd = create_reverse_schedule.course_data(app.config['TERM_WEEK_NUMBER'],
-                                             app.config['DATA_FILENAME'],
-                                             app.config['ENGLISH_FILENAMES'])
-    department = cd.get_input(os.path.join(app.config['UPLOAD_PATH'],
-                                           new_filename))
-    data = cd.department_no_lesson_schedule(department)
+    department_data = cd.get_input(os.path.join(app.config['UPLOAD_PATH'],
+                                                new_filename))
+    data = cd.department_no_lesson_schedule(department_data)
+    if data[0] is False:
+        for i in data[1]:
+            flash(' '.join(i))
+        return redirect(url_for('index'))
     four_class_a_day = 'four_class_a_day' in request.form.getlist('options')
     no_night = 'no_night' in request.form.getlist('options')
     no_weekend = 'no_weekend' in request.form.getlist('options')
