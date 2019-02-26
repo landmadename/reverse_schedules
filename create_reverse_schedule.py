@@ -132,7 +132,7 @@ class course_data():
         for i in range(sheet.nrows - 1):
             i = i + 1
             data.append(sheet.row_values(i))
-        data = [i[:3] for i in data]
+        data = [[str(i[0]), str(int(i[1])), str(i[2])] for i in data]
         return data
 
     def get_english_courses_data(self, filenames):
@@ -249,7 +249,7 @@ class course_data():
             data = [combine_odd(i) for i in data]
 
         if no_weekend:
-            data = [list(map(lambda l:l[: -2]), i) for i in data]
+            data = [list(map(lambda l:l[: -2], i)) for i in data]
 
         return data
 
