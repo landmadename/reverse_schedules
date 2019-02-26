@@ -126,13 +126,23 @@ class course_data():
     def get_input(self, filename):
         import xlrd
 
+        input_data = []
         data = []
+
         ef = xlrd.open_workbook(filename)
         sheet = ef.sheet_by_index(0)
         for i in range(sheet.nrows - 1):
             i = i + 1
-            data.append(sheet.row_values(i))
-        data = [[str(i[0]), str(int(i[1])), str(i[2])] for i in data]
+            input_data.append(sheet.row_values(i))
+        for i in input_data:
+            try:
+                i[1] = int(i[1])
+            except Exception as e:
+                if i[1] == '':
+                    i[1] = '空'
+                else:
+                    i[1] = '学号请输入数字'
+            data.append([str(i[0]), str(i[1]), str(i[2])])
         return data
 
     def get_english_courses_data(self, filenames):
