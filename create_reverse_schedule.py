@@ -172,9 +172,9 @@ class course_data():
         table = [[([name] * 7) for i in range(11)]
                  for ii in range(self.term_week_number)]
         courses_time = self.get_courses_time_from_class_name(class_name)
-        english_time = self.english_data[sid]
+        # english_time = self.english_data[sid]
         table = self.change_schedule(table, courses_time)
-        table = self.change_schedule(table, english_time)
+        # table = self.change_schedule(table, english_time)
         if class_name in self.art_classes:
             table = self.change_schedule(table, self.art_time)
         return table
