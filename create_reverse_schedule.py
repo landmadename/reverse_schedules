@@ -159,12 +159,13 @@ class course_data():
     def change_schedule(self, table, time):
         for i in time:
             for week in i[0]:
-                week = week - 1
-                weekday = i[1]
-                weekday = weekday - 1
-                for index in i[2]:
-                    index = index - 1
-                    table[week][index][weekday] = ''
+                if week <= self.term_week_number:
+                    week = week - 1
+                    weekday = i[1]
+                    weekday = weekday - 1
+                    for index in i[2]:
+                        index = index - 1
+                        table[week][index][weekday] = ''
         return table
 
     def one_no_lesson_schedule(self, data):
@@ -199,14 +200,14 @@ class course_data():
             if class_name not in self.set_of_class_names:
                 infomation.append(self.possible_class_names(class_name))
                 flag = 1
-            if sid not in self.sids:
-                infomation.append('学号错误或没有英语课')
+            # if sid not in self.sids:
+            #     infomation.append('学号错误或没有英语课(如果确认没有英语课，可以忽略)')
             if name == '':
                 infomation.append('没有名字')
                 flag = 1
 
             if infomation != []:
-                user.append(''.join(infomation))
+                user.append('  并且  '.join(infomation))
                 wrong_data.append(user)
         return (flag, wrong_data)
 
