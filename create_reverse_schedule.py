@@ -155,7 +155,7 @@ class course_data():
             for i in range(sheet.nrows - 1):
                 i = i + 1
                 data = sheet.row_values(i)
-                data = [data[0], data[-2]]
+                data = [data[0], data[-4]]
                 english_data.append(data)
         return english_data
 
@@ -183,9 +183,9 @@ class course_data():
         table = [[([name] * 7) for i in range(11)]
                  for ii in range(self.term_week_number)]
         courses_time = self.get_courses_time_from_class_name(class_name)
-        # english_time = self.english_data[sid]
+        english_time = self.english_data[sid]
         table = self.change_schedule(table, courses_time)
-        # table = self.change_schedule(table, english_time)
+        table = self.change_schedule(table, english_time)
         if class_name in self.art_classes:
             table = self.change_schedule(table, self.art_time)
         return table
@@ -210,8 +210,8 @@ class course_data():
             if class_name not in self.set_of_class_names:
                 infomation.append(self.possible_class_names(class_name))
                 flag = 1
-            # if sid not in self.sids:
-            #     infomation.append('学号错误或没有英语课(如果确认没有英语课，可以忽略)')
+            if sid not in self.sids:
+                infomation.append('学号错误或没有英语课(如果确认没有英语课，可以忽略)')
             if name == '':
                 infomation.append('没有名字')
                 flag = 1
