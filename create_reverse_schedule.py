@@ -142,7 +142,9 @@ class course_data():
                     i[1] = '空'
                 else:
                     i[1] = '学号请输入数字'
-            data.append([str(i[0]), str(i[1]), str(i[2])])
+            data.append([str(i[0].upper()).strip(),
+                         str(i[1]).strip(),
+                         str(i[2]).strip()])
         return data
 
     def get_english_courses_data(self, filenames):
