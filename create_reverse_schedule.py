@@ -267,8 +267,11 @@ class course_data():
 
         return data
 
-    def storage_data(self, infomation, data, filename):
-        title = ['时间\\星期', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日']
+    def storage_data(self, infomation, no_weekend, data, filename):
+        if no_weekend:
+            title = ['时间\\星期', '星期一', '星期二', '星期三', '星期四', '星期五']
+        else:
+            title = ['时间\\星期', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日']
         ex = excel()
         if infomation != []:
             ex.add_a_row(['数据来源为学校公开数据，老师没有及时提交的少量数据难以统计，数据仅供参考。'])
