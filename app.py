@@ -72,10 +72,10 @@ def process_file():
 
     department_data = cd.get_input(os.path.join(app.config['UPLOAD_PATH'],
                                                 new_filename))
-    data = cd.department_no_lesson_schedule(department_data)
-    if data[0] is False:
-        for i in data[1]:
-            flash(' '.join(i))
+    flag, data, infomation = cd.department_no_lesson_schedule(department_data)
+    if flag is False:
+        for i in infomation:
+            flash(i)
         return redirect(url_for('index'))
     four_class_a_day = 'four_class_a_day' in request.form.getlist('options')
     no_night = 'no_night' in request.form.getlist('options')
@@ -87,6 +87,7 @@ def process_file():
                           no_night=no_night,
                           no_weekend=no_weekend,
                           week_range=week_range)
-    cd.storage_data(data, os.path.join(app.config['OUTPUT_PATH'],
-                                       'output.xls'))
+    cd.storage_data(infomation,
+                    data,
+                    os.path.join(app.config['OUTPUT_PATH'], 'output.xls'))
     return send_from_directory(app.config['OUTPUT_PATH'], 'output.xls')

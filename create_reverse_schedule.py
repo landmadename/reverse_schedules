@@ -221,17 +221,17 @@ class course_data():
 
             if infomation != []:
                 user.append('  并且  '.join(infomation))
-                wrong_data.append(user)
+                wrong_data.append('  '.join(user))
         return (flag, wrong_data)
 
     def department_no_lesson_schedule(self, department):
         flag, infomation = self.check_user_data(department)
         if flag == 1:
-            return (False, infomation)
+            return (False, [], infomation)
         else:
             schedules = [self.one_no_lesson_schedule(i) for i in department]
             schedule = self.combine(schedules)
-            return schedule
+            return (True, schedule, infomation)
 
     def screen_data(self,
                     data,
@@ -267,9 +267,17 @@ class course_data():
 
         return data
 
-    def storage_data(self, data, filename):
+    def storage_data(self, infomation, data, filename):
         title = ['时间\\星期', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日']
         ex = excel()
+        if infomation != []:
+            ex.add_a_row(['数据来源为学校公开数据，老师没有及时提交的少量数据难以统计，数据仅供参考。'])
+            ex.add_a_row(['请确认以下信息，如果无误请删除。如果有误请修改输入文件，并重新提交：'])
+            for i in infomation:
+                ex.add_a_row([i])
+            ex.add_a_row([''])
+            ex.add_a_row([''])
+            ex.add_a_row([''])
         for e, i in enumerate(data):
             ex.add_a_row(['第' + str(e + 1) + '周'])
             ex.add_a_row(title)
