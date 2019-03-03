@@ -89,6 +89,7 @@ def process_file():
                           week_range=week_range)
     cd.storage_data(infomation,
                     no_weekend,
+                    week_range,
                     data,
                     os.path.join(app.config['OUTPUT_PATH'], 'output.xls'))
     return send_from_directory(app.config['OUTPUT_PATH'], 'output.xls')

@@ -267,7 +267,7 @@ class course_data():
 
         return data
 
-    def storage_data(self, infomation, no_weekend, data, filename):
+    def storage_data(self, infomation, no_weekend, week_range, data, filename):
         if no_weekend:
             title = ['时间\\星期', '星期一', '星期二', '星期三', '星期四', '星期五']
         else:
@@ -282,7 +282,7 @@ class course_data():
             ex.add_a_row([''])
             ex.add_a_row([''])
         for e, i in enumerate(data):
-            ex.add_a_row(['第' + str(e + 1) + '周'])
+            ex.add_a_row(['第' + str(e + week_range[0]) + '周'])
             ex.add_a_row(title)
             for ee, ii in enumerate(i):
                 ii = ['\n'.join(iii) for iii in ii]
