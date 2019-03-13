@@ -243,7 +243,7 @@ class course_data():
             data = [data[i * 2: (i + 1) * 2]
                     for i in range(int(len(data) / 2))]
             data = [list(zip(i[0], i[1])) for i in data]
-            data = [list(map(lambda x:x[0] if len(x[0]) > len(x[1]) else x[1],
+            data = [list(map(lambda x:'' if x[0] != x[1] else x[1],
                              i))
                     for i in data]
             return data
