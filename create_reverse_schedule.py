@@ -7,11 +7,17 @@ class excel():
         import xlwt
         self.pointer = 0
         self.book = xlwt.Workbook(encoding='utf-8', style_compression=0)
-        self.sheet = self.book.add_sheet('table', cell_overwrite_ok=True)
+        self.sheet = []
+        self.style = xlwt.XFStyle()
+        self.style.alignment.wrap = 1
+
+    def add_a_sheet(self, name):
+        self.sheet.append(self.book.add_sheet(name, cell_overwrite_ok=True))
+        self.pointer = 0
 
     def add_a_row(self, data):
         for e, i in enumerate(data):
-            self.sheet.write(self.pointer, e, i)
+            self.sheet[-1].write(self.pointer, e, i, self.style)
         self.pointer = self.pointer + 1
 
     def save(self, fp):
@@ -128,12 +134,19 @@ class course_data():
 
         input_data = []
         data = []
+        revised = []
 
         ef = xlrd.open_workbook(filename)
         sheet = ef.sheet_by_index(0)
         for i in range(sheet.nrows - 1):
             i = i + 1
-            input_data.append(sheet.row_values(i))
+            if sheet.row_values(i)[0] == '':
+                i = i + 1
+                break
+            input_data.append(sheet.row_values(i)[:3])
+        if i != sheet.nrows:
+            for i in range(i, sheet.nrows):
+                revised.append([ii for ii in sheet.row_values(i) if ii != ''])
         for i in input_data:
             try:
                 i[1] = int(i[1])
@@ -145,7 +158,7 @@ class course_data():
             data.append([str(i[0].upper()).strip(),
                          str(i[1]).strip(),
                          str(i[2]).strip()])
-        return data
+        return (data, revised)
 
     def get_english_courses_data(self, filenames):
         import xlrd
@@ -168,7 +181,7 @@ class course_data():
                 courses.append(self.course_time[e])
         return courses
 
-    def change_schedule(self, table, time):
+    def change_schedule(self, table, time, value=""):
         for i in time:
             for week in i[0]:
                 if week <= self.term_week_number:
@@ -177,10 +190,10 @@ class course_data():
                     weekday = weekday - 1
                     for index in i[2]:
                         index = index - 1
-                        table[week][index][weekday] = ''
+                        table[week][index][weekday] = value
         return table
 
-    def one_no_lesson_schedule(self, data):
+    def one_no_lesson_schedule(self, data, revised):
         class_name, sid, name = data
         table = [[([name] * 7) for i in range(11)]
                  for ii in range(self.term_week_number)]
@@ -191,6 +204,9 @@ class course_data():
             table = self.change_schedule(table, english_time)
         if class_name in self.art_classes:
             table = self.change_schedule(table, self.art_time)
+        if class_name in revised.keys():
+            table = self.change_schedule(table, revised[class_name][0], name)
+            table = self.change_schedule(table, revised[class_name][1])
         return table
 
     def combine(self, tables):
@@ -204,7 +220,7 @@ class course_data():
                             table[ee][eee][eeee].append(iiii)
         return table
 
-    def check_user_data(self, data):
+    def check_user_data(self, data, revised):
         wrong_data = []
         flag = 0
         for class_name, sid, name in data:
@@ -222,14 +238,52 @@ class course_data():
             if infomation != []:
                 user.append('  并且  '.join(infomation))
                 wrong_data.append('  '.join(user))
+        
+        for i in revised:
+            infomation = []
+            if i[0] not in self.set_of_class_names:
+                infomation.append(self.possible_class_names(i[0]))
+                flag = 1
+            if len(i) < 2:
+                infomation.append('修订参数没有写全')
+                flag = 1
+                continue
+            for ii in i[1:]:
+                try:
+                    if ii[0] not in "ad":
+                        infomation.append('修正参数"' + str(ii) + '"应该以 a 或 d 开头')
+                        flag = 1
+                        continue
+                    self.format_course_time((ii[1:-1], int(ii[-1])))
+                except Exception as e:
+                    infomation.append('修订参数"' + str(ii) + '"错误')
+                    flag = 1
+            if infomation != []:
+                i.append('---->')
+                wrong_data.append(str(i) + '  并且  '.join(infomation))
+                        
+
         return (flag, wrong_data)
 
-    def department_no_lesson_schedule(self, department):
-        flag, infomation = self.check_user_data(department)
+    def format_revised_data(self, revised):
+        data = {}
+        for i in revised:
+            data[i[0]]=[[],[]]
+        for i in revised:
+            for ii in i[1:]:
+                if ii[0] == 'a':
+                    data[i[0]][0].append(self.format_course_time((ii[1:-1], int(ii[-1]))))
+                elif ii[0] == 'd':
+                    data[i[0]][1].append(self.format_course_time((ii[1:-1], int(ii[-1]))))
+        print(data)
+        return data
+    def department_no_lesson_schedule(self, department, revised):
+        flag, infomation = self.check_user_data(department, revised)
         if flag == 1:
             return (False, [], infomation)
         else:
-            schedules = [self.one_no_lesson_schedule(i) for i in department]
+            revised = self.format_revised_data(revised)
+            schedules = [self.one_no_lesson_schedule(i, revised) for i in department]
             schedule = self.combine(schedules)
             return (True, schedule, infomation)
 
@@ -274,15 +328,16 @@ class course_data():
             title = ['时间\\星期', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六', '星期日']
         ex = excel()
         if infomation != []:
+            ex.add_a_sheet('提示！')
             ex.add_a_row(['数据来源为学校公开数据，老师没有及时提交的少量数据难以统计，数据仅供参考。'])
-            ex.add_a_row(['请确认以下信息，如果无误请删除。如果有误请修改输入文件，并重新提交：'])
+            ex.add_a_row(['请确认以下信息，如果无误请删除此sheet。如果有误请修改输入文件，并重新提交：'])
             for i in infomation:
                 ex.add_a_row([i])
             ex.add_a_row([''])
             ex.add_a_row([''])
             ex.add_a_row([''])
         for e, i in enumerate(data):
-            ex.add_a_row(['第' + str(e + week_range[0]) + '周'])
+            ex.add_a_sheet('第' + str(e + week_range[0]) + '周')
             ex.add_a_row(title)
             for ee, ii in enumerate(i):
                 ii = ['\n'.join(iii) for iii in ii]

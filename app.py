@@ -13,7 +13,6 @@ cd = create_reverse_schedule.course_data(app.config['TERM_WEEK_NUMBER'],
                                          app.config['DATA_FILENAME'],
                                          app.config['ENGLISH_FILENAMES'])
 
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -70,9 +69,10 @@ def process_file():
     new_filename = random_filename(row_filename)
     file.save(os.path.join(app.config['UPLOAD_PATH'], new_filename))
 
-    department_data = cd.get_input(os.path.join(app.config['UPLOAD_PATH'],
+    department_data, revised = cd.get_input(os.path.join(app.config['UPLOAD_PATH'],
                                                 new_filename))
-    flag, data, infomation = cd.department_no_lesson_schedule(department_data)
+    flag, data, infomation = cd.department_no_lesson_schedule(department_data,
+                                                              revised)
     if flag is False:
         for i in infomation:
             flash(i)
