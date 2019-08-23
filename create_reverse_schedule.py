@@ -1,4 +1,5 @@
 import re
+import logging
 from fuzzywuzzy import fuzz
 
 
@@ -119,7 +120,7 @@ class course_data():
         infomation = '您输入的班级"{}"电脑看不懂，您可能找的是 {}。若不是，请在 {} 中寻找规范的班级名称'\
             .format(class_name,
                     possibles,
-                    'landmadename.pythonanywhere.com/class_list')
+                    'http://re.fastbreakfast.top/class_list')
 
         return infomation
 
@@ -144,7 +145,7 @@ class course_data():
                 i = i + 1
                 break
             input_data.append(sheet.row_values(i)[:3])
-        if i != sheet.nrows:
+        if i != sheet.nrows - 1:
             for i in range(i, sheet.nrows):
                 revised.append([ii for ii in sheet.row_values(i) if ii != ''])
         for i in input_data:
