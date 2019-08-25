@@ -203,8 +203,8 @@ class course_data():
         table = self.change_schedule(table, courses_time)
         if english_time is not None:
             table = self.change_schedule(table, english_time)
-        if class_name in self.art_classes:
-            table = self.change_schedule(table, self.art_time)
+        # if class_name in self.art_classes:
+        #     table = self.change_schedule(table, self.art_time)
         if class_name in revised.keys():
             table = self.change_schedule(table, revised[class_name][0], name)
             table = self.change_schedule(table, revised[class_name][1])

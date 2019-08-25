@@ -36,13 +36,13 @@
     </h1>
 </div>
 <br>
-<!--div class="acard card" style="background-color: #dc3545;color: white;">
+<div class="acard card" style="background-color: #dc3545;color: white;">
   <div class="card-body">
     <h5 class="card-title">公告!</h5>
-    <p class="card-text">由于我尚未收到教务处英语课的数据，现在网站生成的无课表中将缺少英语课。该问题预计能在2019年3月3日前修复，修复以后会删除此条告示。请耐心等待！</p>
+    <p class="card-text">由于尚未收到教务处英语课数据，现在网站生成的无课表中将缺少英语课。收到以后会删除此条告示。请耐心等待！</p>
   </div>
 </div>
-<br-->
+<br>
 <div class="btn-group acard" role="group" aria-label="Basic example" style="width: 320px">
 <button id="b_left" onclick="javascrtpt:window.location.href='{{ url_for('instructions')}}'" type="button" class="btn btn-outline-info btn-lg" style="background-color: white;width: 161px;">查看使用说明</button>
 <button id="b_right" onclick="javascrtpt:window.location.href='{{ url_for('static', filename='test/input.xls')}}'" type="button" class="btn btn-outline-info btn-lg" style="background-color: white;width: 160px;">下载示例文件</button>
@@ -94,12 +94,9 @@
     <br>
     <button type="submit" name="submit" class="btn btn-primary btn-lg btn-block acard" onclick="function(){$('html,body').animate({scrollTop: '0px'}, 800);}">生成无课表</button>
     <br>
-    <div class="acard" style="background-color: white; padding-right: 5px; padding-left: 5px; padding-top: 5px;padding-bottom: 5px;color: #818182;">
-        艺术系课表构造不同，难以统计。所以此版本默认艺术系上午满课
-    </div>
-    <br>
+    
     <div class="acard" style="background-color: white;padding-right: 5px; padding-left: 5px; padding-top: 5px; padding-bottom: 5px;color: #818182;">
-        软件首次投入使用，多有不足，数据仅供参考。如果发现问题麻烦告诉我 QQ：865870740
+        数据仅供参考。如果发现问题麻烦告诉我 QQ：865870740
     </div>
     <br>
     <div class="acard" style="text-align: right; background-color: white;padding-right: 5px; padding-top: 5px;padding-bottom: 5px;color: #818182;">

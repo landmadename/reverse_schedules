@@ -1,0 +1,178 @@
+08/25/2019 15:18:59 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:18:59 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:18:59 PM - INFO -  * Restarting with stat
+08/25/2019 15:19:55 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:19:55 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:19:56 PM - INFO -  * Restarting with stat
+08/25/2019 15:20:21 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:20:21 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:24:23 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:24:23 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:24:23 PM - INFO -  * Restarting with stat
+08/25/2019 15:24:34 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:24:34 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:24:47 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:24:47 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:24:48 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 15:26:11 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:26:11 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:26:12 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 15:26:20 PM - INFO - visit index
+08/25/2019 15:26:20 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:20] "GET / HTTP/1.1" 200 -
+08/25/2019 15:26:20 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:20] "GET /static/css/bootstrap-4.0.0.min.css HTTP/1.1" 200 -
+08/25/2019 15:26:20 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:20] "GET /static/css/bootstrap-switch.css HTTP/1.1" 200 -
+08/25/2019 15:26:20 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:20] "GET /static/css/style.css HTTP/1.1" 200 -
+08/25/2019 15:26:20 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:20] "GET /static/css/fileinput.min.css HTTP/1.1" 200 -
+08/25/2019 15:26:21 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:21] "GET /static/js/zh.min.js HTTP/1.1" 200 -
+08/25/2019 15:26:21 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:21] "GET /static/js/bootstrap-4.0.0.min.js HTTP/1.1" 200 -
+08/25/2019 15:26:21 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:21] "GET /static/js/fileinput.min.js HTTP/1.1" 200 -
+08/25/2019 15:26:21 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:21] "GET /static/js/bootstrap-switch.js HTTP/1.1" 200 -
+08/25/2019 15:26:21 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:21] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+08/25/2019 15:26:26 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:26:26] "GET /static/test/input.xls HTTP/1.1" 200 -
+08/25/2019 15:27:29 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:27:29] "GET /static/img/loading.gif HTTP/1.1" 404 -
+08/25/2019 15:27:32 PM - INFO - 文件->ImmutableMultiDict([('file', <FileStorage: 'input.xls' ('application/vnd.ms-excel')>)])
+08/25/2019 15:27:32 PM - INFO - 表单->ImmutableMultiDict([('options', 'four_class_a_day'), ('options', 'no_night'), ('options', 'no_weekend'), ('from_week', '1'), ('to_week', '18'), ('submit', '')])
+08/25/2019 15:27:32 PM - INFO - 新文件名->103014f3142a4ba6b5a5ce26e3dd8403.xls
+08/25/2019 15:27:33 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:27:33] "POST /process_form HTTP/1.1" 200 -
+08/25/2019 15:32:15 PM - INFO - visit instructons
+08/25/2019 15:32:15 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:32:15] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:32:15 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:32:15] "GET /static/img/input_example.jpg HTTP/1.1" 200 -
+08/25/2019 15:32:15 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:32:15] "GET /static/img/options_example.jpg HTTP/1.1" 200 -
+08/25/2019 15:32:16 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:32:16] "GET /static/img/operates1.jpg HTTP/1.1" 200 -
+08/25/2019 15:32:16 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:32:16] "GET /static/img/operates3.jpg HTTP/1.1" 200 -
+08/25/2019 15:32:16 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:32:16] "GET /static/img/operates2.jpg HTTP/1.1" 200 -
+08/25/2019 15:32:16 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:32:16] "GET /favicon.ico HTTP/1.1" 404 -
+08/25/2019 15:53:29 PM - INFO - visit instructons
+08/25/2019 15:53:29 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:53:29] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:53:31 PM - INFO - visit instructons
+08/25/2019 15:53:31 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:53:31] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:53:53 PM - INFO - visit instructons
+08/25/2019 15:53:53 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:53:53] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:54:08 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:54:08 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:54:09 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 15:54:11 PM - INFO - visit instructons
+08/25/2019 15:54:11 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:54:11] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:55:14 PM - INFO - visit instructons
+08/25/2019 15:55:14 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:55:14] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:55:17 PM - INFO - visit instructons
+08/25/2019 15:55:17 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:55:17] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:55:21 PM - INFO - visit instructons
+08/25/2019 15:55:21 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:55:21] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:56:04 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:56:04 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:56:05 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 15:56:07 PM - INFO - visit instructons
+08/25/2019 15:56:07 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:56:07] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:57:22 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:57:22] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 -
+08/25/2019 15:57:22 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:57:22] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+08/25/2019 15:58:35 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:58:35 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 15:58:36 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 15:58:42 PM - INFO - visit instructons
+08/25/2019 15:58:42 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:58:42] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 15:58:43 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:58:43] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 -
+08/25/2019 15:58:43 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:58:43] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+08/25/2019 15:59:37 PM - INFO - 127.0.0.1 - - [25/Aug/2019 15:59:37] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+08/25/2019 16:00:41 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:00:41 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:00:42 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:00:45 PM - INFO - visit instructons
+08/25/2019 16:00:45 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:00:45] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 16:01:10 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:01:10 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:01:11 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:01:12 PM - INFO - visit instructons
+08/25/2019 16:01:12 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:01:12] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 16:01:47 PM - INFO - visit instructons
+08/25/2019 16:01:47 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:01:47] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 16:02:07 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:02:07] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 -
+08/25/2019 16:02:07 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:02:07] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+08/25/2019 16:04:41 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:04:41 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:04:42 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:04:46 PM - INFO - visit instructons
+08/25/2019 16:04:46 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:04:46] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 16:04:46 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:04:46] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 -
+08/25/2019 16:04:46 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:04:46] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+08/25/2019 16:04:55 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:04:55] "GET /baidu.com HTTP/1.1" 404 -
+08/25/2019 16:04:58 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:04:58] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 -
+08/25/2019 16:04:58 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:04:58] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+08/25/2019 16:06:02 PM - INFO - visit instructons
+08/25/2019 16:06:02 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:06:02] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 16:06:02 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:06:02] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 -
+08/25/2019 16:06:02 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:06:02] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+08/25/2019 16:06:10 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:06:10 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:06:11 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:06:16 PM - INFO - visit instructons
+08/25/2019 16:06:16 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:06:16] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 16:06:16 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:06:16] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 -
+08/25/2019 16:06:16 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:06:16] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+08/25/2019 16:07:37 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:07:37] "GET /class_names HTTP/1.1" 404 -
+08/25/2019 16:07:46 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:07:46] "GET /class_names.html HTTP/1.1" 404 -
+08/25/2019 16:08:20 PM - INFO - visit class list
+08/25/2019 16:08:20 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:08:20] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:08:20 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:08:20] "GET /static/css/bootstrap-4.0.0.css HTTP/1.1" 200 -
+08/25/2019 16:08:20 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:08:20] "GET /static/js/bootstrap-4.0.0.js HTTP/1.1" 200 -
+08/25/2019 16:27:53 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:27:53 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:27:55 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:27:58 PM - INFO - visit class list
+08/25/2019 16:27:58 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:27:58] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:28:05 PM - INFO - visit class list
+08/25/2019 16:28:05 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:28:05] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:29:24 PM - INFO - visit class list
+08/25/2019 16:29:24 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:29:24] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:29:50 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:29:50 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:29:51 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:29:51 PM - INFO - visit class list
+08/25/2019 16:29:51 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:29:51] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:30:30 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:30:30 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:30:31 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:30:31 PM - INFO - visit class list
+08/25/2019 16:30:31 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:30:31] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:30:33 PM - INFO - visit class list
+08/25/2019 16:30:33 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:30:33] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:30:34 PM - INFO - visit class list
+08/25/2019 16:30:34 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:30:34] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:30:38 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:30:38 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:30:39 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:30:42 PM - INFO - visit class list
+08/25/2019 16:30:42 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:30:42] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:31:27 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:31:27 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:31:28 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:31:41 PM - INFO - visit class list
+08/25/2019 16:31:41 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:31:41] "GET /class_list HTTP/1.1" 200 -
+08/25/2019 16:33:23 PM - INFO - visit index
+08/25/2019 16:33:23 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:33:23] "GET / HTTP/1.1" 200 -
+08/25/2019 16:33:36 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:33:36] "GET /static/img/loading.gif HTTP/1.1" 404 -
+08/25/2019 16:33:48 PM - INFO - visit index
+08/25/2019 16:33:48 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:33:48] "GET / HTTP/1.1" 200 -
+08/25/2019 16:34:05 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:34:05 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:34:07 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:34:12 PM - INFO - visit index
+08/25/2019 16:34:12 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:34:12] "GET / HTTP/1.1" 200 -
+08/25/2019 16:34:12 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:34:12] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+08/25/2019 16:34:18 PM - INFO - 文件->ImmutableMultiDict([('file', <FileStorage: 'input (1).xls' ('application/vnd.ms-excel')>)])
+08/25/2019 16:34:18 PM - INFO - 表单->ImmutableMultiDict([('options', 'four_class_a_day'), ('options', 'no_night'), ('from_week', '1'), ('to_week', '18'), ('submit', '')])
+08/25/2019 16:34:18 PM - INFO - 新文件名->6cad8cdd84694586a0e40f82dbe0f57d.xls
+08/25/2019 16:34:18 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:34:18] "POST /process_form HTTP/1.1" 200 -
+08/25/2019 16:35:48 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:35:48 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:35:49 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:35:52 PM - INFO - visit index
+08/25/2019 16:35:52 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:35:52] "GET / HTTP/1.1" 200 -
+08/25/2019 16:35:53 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:35:53] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+08/25/2019 16:36:10 PM - INFO - visit instructons
+08/25/2019 16:36:10 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:36:10] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 16:37:14 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:37:14 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+08/25/2019 16:37:15 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+08/25/2019 16:37:16 PM - INFO - visit instructons
+08/25/2019 16:37:16 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:37:16] "GET /instructions HTTP/1.1" 200 -
