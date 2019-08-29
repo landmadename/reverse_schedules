@@ -176,3 +176,6 @@
 08/25/2019 16:37:15 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
 08/25/2019 16:37:16 PM - INFO - visit instructons
 08/25/2019 16:37:16 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:37:16] "GET /instructions HTTP/1.1" 200 -
+08/25/2019 16:57:00 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:57:00] "GET /search.asp?searchword=Ӧ%D5%D9Ů%D3%D1 HTTP/1.1" 404 -
+08/25/2019 16:57:04 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:57:04] "GET /search.asp?searchword=Ӧ%D5%D9Ů%D3%D1 HTTP/1.1" 404 -
+08/25/2019 16:57:08 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:57:08] "GET /search.asp?searchword=Ӧ%D5%D9Ů%D3%D1 HTTP/1.1" 404 -
