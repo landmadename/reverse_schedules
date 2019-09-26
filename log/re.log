@@ -179,3 +179,119 @@
 08/25/2019 16:57:00 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:57:00] "GET /search.asp?searchword=Ӧ%D5%D9Ů%D3%D1 HTTP/1.1" 404 -
 08/25/2019 16:57:04 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:57:04] "GET /search.asp?searchword=Ӧ%D5%D9Ů%D3%D1 HTTP/1.1" 404 -
 08/25/2019 16:57:08 PM - INFO - 127.0.0.1 - - [25/Aug/2019 16:57:08] "GET /search.asp?searchword=Ӧ%D5%D9Ů%D3%D1 HTTP/1.1" 404 -
+09/26/2019 13:40:18 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:40:18 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:40:21 PM - INFO -  * Restarting with stat
+09/26/2019 13:40:53 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:40:53 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:40:55 PM - INFO -  * Restarting with stat
+09/26/2019 13:40:56 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:40:56 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:40:58 PM - WARNING -  * Debugger is active!
+09/26/2019 13:40:58 PM - INFO -  * Debugger PIN: 178-661-221
+09/26/2019 13:40:58 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+09/26/2019 13:41:15 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:41:15] "GET / HTTP/1.1" 500 -
+09/26/2019 13:41:15 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:41:15] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+09/26/2019 13:41:15 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:41:15] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+09/26/2019 13:41:15 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:41:15] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+09/26/2019 13:41:16 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:41:16] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+09/26/2019 13:41:16 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:41:16] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+09/26/2019 13:41:16 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:41:16] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+09/26/2019 13:43:09 PM - INFO -  * Detected change in 'C:\\CODE\\python\\USING\\courses\\reverse_schedules\\create_reverse_schedule.py', reloading
+09/26/2019 13:43:09 PM - INFO -  * Restarting with stat
+09/26/2019 13:43:09 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:43:09 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:43:12 PM - WARNING -  * Debugger is active!
+09/26/2019 13:43:12 PM - INFO -  * Debugger PIN: 178-661-221
+09/26/2019 13:43:12 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+09/26/2019 13:43:24 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:43:24] "GET / HTTP/1.1" 500 -
+09/26/2019 13:43:24 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:43:24] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+09/26/2019 13:43:24 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:43:24] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+09/26/2019 13:43:24 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:43:24] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+09/26/2019 13:43:24 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:43:24] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+09/26/2019 13:43:24 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:43:24] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+09/26/2019 13:43:25 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:43:25] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+09/26/2019 13:51:42 PM - INFO -  * Detected change in 'C:\\CODE\\python\\USING\\courses\\reverse_schedules\\create_reverse_schedule.py', reloading
+09/26/2019 13:51:42 PM - INFO -  * Restarting with stat
+09/26/2019 13:51:43 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:51:43 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:51:46 PM - WARNING -  * Debugger is active!
+09/26/2019 13:51:46 PM - INFO -  * Debugger PIN: 178-661-221
+09/26/2019 13:51:46 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+09/26/2019 13:52:06 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:52:06] "GET / HTTP/1.1" 500 -
+09/26/2019 13:52:06 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:52:06] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+09/26/2019 13:52:06 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:52:06] "GET /?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1" 200 -
+09/26/2019 13:52:06 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:52:06] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+09/26/2019 13:52:06 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:52:06] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+09/26/2019 13:52:07 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:52:07] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+09/26/2019 13:52:07 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:52:07] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+09/26/2019 13:53:45 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:53:45 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:53:47 PM - INFO - visit index
+09/26/2019 13:53:47 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:47] "GET / HTTP/1.1" 200 -
+09/26/2019 13:53:47 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:47] "GET /static/css/bootstrap-switch.css HTTP/1.1" 200 -
+09/26/2019 13:53:47 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:47] "GET /static/css/bootstrap-4.0.0.min.css HTTP/1.1" 200 -
+09/26/2019 13:53:48 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:48] "GET /static/css/style.css HTTP/1.1" 200 -
+09/26/2019 13:53:48 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:48] "GET /static/css/fileinput.min.css HTTP/1.1" 200 -
+09/26/2019 13:53:48 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:48] "GET /static/js/zh.min.js HTTP/1.1" 200 -
+09/26/2019 13:53:48 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:48] "GET /static/js/bootstrap-4.0.0.min.js HTTP/1.1" 200 -
+09/26/2019 13:53:48 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:48] "GET /static/js/fileinput.min.js HTTP/1.1" 200 -
+09/26/2019 13:53:48 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:48] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+09/26/2019 13:53:48 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:48] "GET /static/js/bootstrap-switch.js HTTP/1.1" 200 -
+09/26/2019 13:53:49 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:53:49] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+09/26/2019 13:54:10 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:10] "GET /static/test/input.xls HTTP/1.1" 200 -
+09/26/2019 13:54:19 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:19] "GET /static/img/loading.gif HTTP/1.1" 404 -
+09/26/2019 13:54:23 PM - INFO - 文件->ImmutableMultiDict([('file', <FileStorage: 'input.xls' ('application/vnd.ms-excel')>)])
+09/26/2019 13:54:23 PM - INFO - 表单->ImmutableMultiDict([('options', 'four_class_a_day'), ('options', 'no_night'), ('from_week', '1'), ('to_week', '18'), ('submit', '')])
+09/26/2019 13:54:23 PM - INFO - 新文件名->4f7fdd11e9f24aefa37fdc380d4aaa18.xls
+09/26/2019 13:54:23 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:23] "POST /process_form HTTP/1.1" 200 -
+09/26/2019 13:54:27 PM - INFO - visit index
+09/26/2019 13:54:27 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:27] "GET / HTTP/1.1" 200 -
+09/26/2019 13:54:28 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:28] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+09/26/2019 13:54:35 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:54:35 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:54:37 PM - INFO -  * Restarting with stat
+09/26/2019 13:54:38 PM - INFO - raw path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:54:38 PM - INFO - now path->C:\CODE\python\USING\courses\reverse_schedules
+09/26/2019 13:54:40 PM - WARNING -  * Debugger is active!
+09/26/2019 13:54:40 PM - INFO -  * Debugger PIN: 178-661-221
+09/26/2019 13:54:40 PM - INFO -  * Running on http://127.0.0.1:80/ (Press CTRL+C to quit)
+09/26/2019 13:54:41 PM - INFO - visit index
+09/26/2019 13:54:41 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:41] "GET / HTTP/1.1" 200 -
+09/26/2019 13:54:42 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:42] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - visit index
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET / HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET /static/css/bootstrap-4.0.0.min.css HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET /static/css/style.css HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET /static/css/fileinput.min.css HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET /static/css/bootstrap-switch.css HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET /static/js/bootstrap-4.0.0.min.js HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET /static/js/fileinput.min.js HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET /static/js/zh.min.js HTTP/1.1" 200 -
+09/26/2019 13:54:44 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:44] "GET /static/js/bootstrap-switch.js HTTP/1.1" 200 -
+09/26/2019 13:54:45 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:45] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+09/26/2019 13:54:48 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:48] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 -
+09/26/2019 13:54:49 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:49] "GET /static/js/zh.min.js.map HTTP/1.1" 404 -
+09/26/2019 13:54:49 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:49] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+09/26/2019 13:54:50 PM - INFO - visit index
+09/26/2019 13:54:50 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:50] "GET / HTTP/1.1" 200 -
+09/26/2019 13:54:51 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:51] "GET /static/js/bootstrap.min.js.map HTTP/1.1" 404 -
+09/26/2019 13:54:51 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:51] "GET /static/js/zh.min.js.map HTTP/1.1" 404 -
+09/26/2019 13:54:51 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:51] "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 -
+09/26/2019 13:54:51 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:54:51] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+09/26/2019 13:56:26 PM - INFO - visit index
+09/26/2019 13:56:26 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:26] "GET / HTTP/1.1" 200 -
+09/26/2019 13:56:26 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:26] "GET /static/css/bootstrap-4.0.0.min.css HTTP/1.1" 200 -
+09/26/2019 13:56:26 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:26] "GET /static/css/bootstrap-switch.css HTTP/1.1" 200 -
+09/26/2019 13:56:26 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:26] "GET /static/css/fileinput.min.css HTTP/1.1" 200 -
+09/26/2019 13:56:26 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:26] "GET /static/css/style.css HTTP/1.1" 200 -
+09/26/2019 13:56:27 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:27] "GET /static/js/jquery-3.2.1.min.js HTTP/1.1" 200 -
+09/26/2019 13:56:27 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:27] "GET /static/js/bootstrap-4.0.0.min.js HTTP/1.1" 200 -
+09/26/2019 13:56:27 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:27] "GET /static/js/fileinput.min.js HTTP/1.1" 200 -
+09/26/2019 13:56:27 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:27] "GET /static/js/zh.min.js HTTP/1.1" 200 -
+09/26/2019 13:56:27 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:27] "GET /static/js/bootstrap-switch.js HTTP/1.1" 200 -
+09/26/2019 13:56:27 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:27] "GET /static/img/favicon.ico HTTP/1.1" 200 -
+09/26/2019 13:56:39 PM - INFO - visit index
+09/26/2019 13:56:40 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:40] "GET / HTTP/1.1" 200 -
+09/26/2019 13:56:40 PM - INFO - 127.0.0.1 - - [26/Sep/2019 13:56:40] "GET /static/img/favicon.ico HTTP/1.1" 200 -

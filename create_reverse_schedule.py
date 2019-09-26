@@ -106,6 +106,8 @@ class course_data():
             english_dict[sid] = []
             for i in data:
                 weekday = re.findall('周.', i)
+                if len(weekday) != 1:
+                    print('---->', i)
                 assert len(weekday) == 1
                 weekday = weekday_dict[weekday[0]]
                 english_index = re.findall('(\d+)-(\d+)', i)
@@ -171,7 +173,7 @@ class course_data():
             for i in range(sheet.nrows - 1):
                 i = i + 1
                 data = sheet.row_values(i)
-                data = [data[0], data[-4]]
+                data = [data[0], data[-3]]
                 english_data.append(data)
         return english_data
 
